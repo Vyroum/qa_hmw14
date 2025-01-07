@@ -25,4 +25,4 @@ class MainPage:
 
     def check_cart(self, value):
         browser.element('[class="BasketItem_row__BI8uk"]').should(have.text(value.model))
-        browser.element('[class="SelectableList_title__BQ9Zk"]').should(have.value(value.quantity))
+        browser.element('[class="SelectableList_title__BQ9Zk"]').should(have.text(value.quantity))
