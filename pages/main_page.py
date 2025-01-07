@@ -9,9 +9,13 @@ class MainPage:
         browser.open("https://chitai-gorod.ru")
         if  browser.element('[class="button change-city__button change-city__button--accept blue"]').should(be.visible):
             browser.element('[class="button change-city__button change-city__button--accept blue"]').click()
+        else:
+            pass
         time.sleep(1)
         if browser.element('[class="popmechanic-close"]').should(be.visible):
             browser.element('[class="popmechanic-close"]').click()
+        else:
+            pass
         browser.element('[class="button cookie-notice__button white"]').click()
 
     def search_book(self, value: Books):
