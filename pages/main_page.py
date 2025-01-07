@@ -22,10 +22,6 @@ class MainPage:
         browser.element('[class="products-list"]').should(have.text(value.name))
 
     def add_to_cart(self):
-        if browser.element('[class="popmechanic-close"]').should(be.visible):
-            browser.element('[class="popmechanic-close"]').click()
-        else:
-            pass
         browser.element(by.text("Купить")).perform(command.js.scroll_into_view).click()
 
     def open_cart(self):
