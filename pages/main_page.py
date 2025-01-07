@@ -8,11 +8,6 @@ class MainPage:
     def open_browser(self):
         browser.open("https://chitai-gorod.ru")
         time.sleep(1)
-        if browser.element('[class="popmechanic-close"]').should(be.visible):
-            browser.element('[class="popmechanic-close"]').click()
-        else:
-            pass
-        browser.element('[class="button cookie-notice__button white"]').click()
 
     def search_book(self, value: Books):
         browser.element('[class="header-search__input"]').clear().type(value.name).press_enter()
