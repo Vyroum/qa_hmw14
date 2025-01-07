@@ -7,7 +7,7 @@ from resources.CPU import cpu
 mainpage = MainPage()
 
 
-def test_main_page(browser_set):
+def test_main_page():
     with allure.step("Открытие веб-страницы"):
         mainpage.open_browser()
 
