@@ -10,14 +10,14 @@ class MainPage:
         time.sleep(1)
 
     def search_book(self, value: CPUs):
-        browser.element('[#id=searchInput]').click().type(value.model).press_enter()
-        time.sleep(5)
+        browser.element('[id="searchInput"]').click().type(value.model).press_enter()
+        time.sleep(3)
 
     def check_book_availability(self, value):
         browser.element('[class="rendererWrapper"]').should(have.text(value.model))
 
     def add_to_cart(self):
-        browser.element(by.text("В корзину")).perform(command.js.scroll_into_view).click()
+        browser.element(by.text("В корзину")).click()
 
     def open_cart(self):
         browser.element(by.text("Корзина")).click()
