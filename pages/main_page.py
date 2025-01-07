@@ -10,7 +10,7 @@ class MainPage:
         time.sleep(1)
 
     def search_book(self, value: CPUs):
-        browser.element('#id=searchInput').type(value.model).press_enter()
+        browser.element('[#id=searchInput]').type(value.model).press_enter()
         time.sleep(5)
 
     def check_book_availability(self, value):
