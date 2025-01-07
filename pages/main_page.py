@@ -20,7 +20,7 @@ class MainPage:
         browser.element(by.text("В корзину")).click()
 
     def open_cart(self):
-        browser.element(by.text("Корзина")).click()
+        browser.element(by.text("В корзине")).click()
         time.sleep(2)
 
     def check_cart(self, value):
