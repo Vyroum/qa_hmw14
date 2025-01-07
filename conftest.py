@@ -11,7 +11,6 @@ from utils import attach
 
 def pytest_addoption(parser):
     parser.addoption('--browser_version')
-    parser.addoption('--browser_type')
 
 @pytest.fixture(scope="session", autouse=True)
 def load_env():
