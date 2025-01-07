@@ -17,7 +17,7 @@ def test_main_page(browser_set):
     with allure.step("Проверка наличия книги в поисковой выдаче"):
         mainpage.check_book_availability(cpu)
 
-    with allure.step("Добавить книгу в корзину"):
+    with allure.step("Добавить процессор в корзину"):
         mainpage.add_to_cart()
         time.sleep(2)
 
