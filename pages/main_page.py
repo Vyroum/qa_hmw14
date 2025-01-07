@@ -7,7 +7,8 @@ class MainPage:
 
     def open_browser(self):
         browser.open("https://chitai-gorod.ru")
-        browser.element('[class="button change-city__button change-city__button--accept blue"]').click()
+        if  browser.element('[class="button change-city__button change-city__button--accept blue"]').should(be.visible):
+            browser.element('[class="button change-city__button change-city__button--accept blue"]').click()
         time.sleep(1)
         if browser.element('[class="popmechanic-close"]').should(be.visible):
             browser.element('[class="popmechanic-close"]').click()
