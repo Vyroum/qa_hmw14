@@ -7,7 +7,7 @@ from resources.book import book
 mainpage = MainPage()
 
 
-def test_main_page():
+def test_main_page(browser_set):
     with allure.step("Открытие веб-страницы"):
         mainpage.open_browser()
 
