@@ -2,7 +2,7 @@ import time
 import allure
 
 from pages.main_page import MainPage
-from resources.CPU import cpu
+from resources.cpu import cpu
 
 mainpage = MainPage()
 

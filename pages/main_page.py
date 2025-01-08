@@ -1,6 +1,6 @@
 import time
 from selene import browser, have, by, command, be
-from resources.CPU import CPUs
+from resources.cpu import CPUs
 
 
 class MainPage:
